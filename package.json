@@ -1,0 +1,22 @@
+{
+  "name": "christmas-mcp",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "$npm_execpath run build && vite preview",
+    "deploy": "$npm_execpath run build && wrangler deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+		"format": "prettier --write ./src",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.11.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.2.3",
+    "vite": "^6.3.5",
+    "vite-ssr-components": "^0.5.2",
+    "wrangler": "^4.17.0"
+  }
+}
