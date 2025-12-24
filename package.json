@@ -7,14 +7,19 @@
     "preview": "$npm_execpath run build && vite preview",
     "deploy": "$npm_execpath run build && wrangler deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings",
-		"format": "prettier --write ./src",
+    "format": "prettier --write ./src",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "hono": "^4.11.1"
+    "@hono/mcp": "^0.2.2",
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "dedent": "^1.7.1",
+    "hono": "^4.11.1",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.2.3",
+    "@types/node": "^25.0.3",
     "vite": "^6.3.5",
     "vite-ssr-components": "^0.5.2",
     "wrangler": "^4.17.0"
