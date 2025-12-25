@@ -6,6 +6,7 @@ export const renderer = jsxRenderer(({ children }) => {
     <html>
       <head>
         <ViteClient />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <Link href="/src/app/style.css" rel="stylesheet" />
       </head>
       <body>{children}</body>
