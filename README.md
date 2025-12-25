@@ -1,21 +1,31 @@
-```txt
-npm install
-npm run dev
-```
+# 🎄 christmas-mcp
 
-```txt
-npm run deploy
-```
+クリスマスMCPツール集
 
-[For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
+## 概要
 
-```txt
-npm run cf-typegen
-```
+このリポジトリは、Model Context Protocol (MCP) サーバーとして動作する、
+クリスマスにちなんだユニークなツール群を提供します。
 
-Pass the `CloudflareBindings` as generics when instantiation `Hono`:
+## ツール一覧
 
-```ts
-// src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
-```
+### 🎂 ケーキを安全に持って帰る確率算出ツール
+
+クリスマスケーキを無事に家まで持ち帰れる確率を科学的(?)に算出するツールです。
+
+**入力パラメータ:**
+- ケーキの直径 (cm)
+- ケーキの高さ (cm)
+- ホールケーキかカットケーキか
+- 移動距離 (km) または 移動時間 (分)
+
+**出力:**
+- 安全スコア (0-100)
+- 転倒係数
+- 具体的なアドバイス
+
+※このツールはジョーク用です。実際のケーキの運搬は慎重に行ってください。
+
+## 今後の予定
+
+クリスマス関連の便利?(かもしれない)ツールを順次追加予定です。
