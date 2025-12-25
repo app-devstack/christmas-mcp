@@ -37,6 +37,7 @@ function callCakeSafetyTool(args: ShapeOutput<typeof inputSchema>): CallToolResu
 export const CALC_CAKE_SAFETY = {
   name: 'calculate_cake_safety',
   config: {
+    title: 'ケーキ持ち帰り安全度計算',
     description:
       'ケーキの持ち帰り安全度を計算します。ケーキのサイズ、移動距離、タイプから安全スコアと転倒係数を算出し、適切なアドバイスを提供します。',
     inputSchema,
